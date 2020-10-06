@@ -1,0 +1,6 @@
+coverage
+hypothesis
+pluggy
+py
+pytest
+setuptools

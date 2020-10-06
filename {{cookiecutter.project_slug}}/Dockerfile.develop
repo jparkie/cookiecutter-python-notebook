@@ -1,0 +1,16 @@
+FROM python:3.7-slim
+
+LABEL maintainer="jparkie <https://github.com/jparkie>"
+LABEL description="A Docker image used for building cookiecutter-python-jupyter projects"
+
+# Install Project Dependencies:
+RUN pip install tox tox-venv
+
+# Default Repository:
+WORKDIR /repository
+
+# Assume Venv:
+ENV PATH="/repository/venv/bin:$PATH"
+
+# Expose 8888 for Jupyter:
+EXPOSE 8888
