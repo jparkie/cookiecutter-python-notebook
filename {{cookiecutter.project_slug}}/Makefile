@@ -3,7 +3,7 @@ PYTHON_ARGS =
 TEST_ARGS =
 
 DOCKER_BASE = docker run \
-	--volume $$(pwd):/repository \
+	--volume $$(pwd):/repo \
 	--volume /var/run/docker.sock:/var/run/docker.sock \
 	--publish 8888:8888
 

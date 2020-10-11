@@ -7,10 +7,10 @@ LABEL description="A Docker image used for building cookiecutter-python-jupyter 
 RUN pip install tox tox-venv
 
 # Default Repository:
-WORKDIR /repository
+WORKDIR /repo
 
 # Assume Venv:
-ENV PATH="/repository/venv/bin:$PATH"
+ENV PATH="/repo/venv/bin:$PATH"
 
 # Expose 8888 for Jupyter:
 EXPOSE 8888

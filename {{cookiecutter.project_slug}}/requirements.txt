@@ -1,5 +1,5 @@
 # Editable install with no version control (example==0.1.0)
--e /repository
+-e /repo
 argon2-cffi==20.1.0
 async-generator==1.10
 attrs==20.2.0
